@@ -1,0 +1,28 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+}
+.my-name {
+  text-align: center;
+}
+.nav-links > li {
+  padding: 1rem;
+  text-align: left;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.hire-me > h2 {
+  text-align: center;
+}
+.link {
+  display: flex;
+}
+.nav-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
