@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "../reset.css";
 import "../navbar.css";
 import home from "../assets/home.png";
@@ -7,7 +8,8 @@ import phone from "../assets/phone.png";
 
 import linkedin from "../assets/linkedin.png";
 
-export default function Navbar(props) {
+export default function Navbar({handleNavigate}) {
+  
   return (
     <>
       <nav>
@@ -16,22 +18,34 @@ export default function Navbar(props) {
             <h2 className="my-name">Dominik </h2>
             <h2 className="my-name">Dobrowolski</h2>
             <li>
-              <a className="link" href="">
-                {" "}
+              <a
+                onClick={(e) => handleNavigate(e)}
+                className="link"
+                href=""
+              >
+                {""}
                 <img src={home} className="nav-img" />
                 Home
               </a>
             </li>
+
             <li>
-              {" "}
-              <img src={person} className="nav-img" />
-              <a href="">About me</a>
+              <a
+                onClick={(e) => handleNavigate(e)}
+                className="link"
+                href=""
+              >
+                {""}
+                <img src={person} className="nav-img" />
+                About me
+              </a>
             </li>
+            
           </div>
 
           <div className="hire-me nav-links">
             <h2>Hire me</h2>
-           <li>
+            <li>
               {" "}
               <img src={page} className="nav-img" />
               <a href="">Resume</a>
@@ -39,13 +53,15 @@ export default function Navbar(props) {
             <li>
               {" "}
               <img src={phone} className="nav-img" />
-              <a href="">Resume</a>
+              <a href="">Contact me</a>
             </li>
             {/* Need a LinkedIn image here */}
             <li>
               {" "}
               <img src={linkedin} className="nav-img" />
-              <a href="https://www.linkedin.com/in/dominik-dobrowolski/">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/dominik-dobrowolski/">
+                LinkedIn
+              </a>
             </li>
           </div>
         </ul>
