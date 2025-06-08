@@ -8,8 +8,7 @@ import phone from "../assets/phone.png";
 
 import linkedin from "../assets/linkedin.png";
 
-export default function Navbar({handleNavigate}) {
-  
+export default function Navbar({ handleNavigate }) {
   return (
     <>
       <nav>
@@ -21,7 +20,7 @@ export default function Navbar({handleNavigate}) {
               <a
                 onClick={(e) => handleNavigate(e)}
                 className="link"
-                href=""
+                href="/Home"
               >
                 {""}
                 <img src={home} className="nav-img" />
@@ -33,27 +32,39 @@ export default function Navbar({handleNavigate}) {
               <a
                 onClick={(e) => handleNavigate(e)}
                 className="link"
-                href=""
+                href="/About"
               >
                 {""}
                 <img src={person} className="nav-img" />
                 About me
               </a>
             </li>
-            
           </div>
 
           <div className="hire-me nav-links">
             <h2>Hire me</h2>
             <li>
-              {" "}
-              <img src={page} className="nav-img" />
-              <a href="">Resume</a>
+              <a
+                onClick={(e) => handleNavigate(e)}
+                className="link"
+                href="/Resume"
+              >
+                {""}
+                <img src={page} className="nav-img" />
+                Resume
+              </a>
             </li>
+
             <li>
-              {" "}
-              <img src={phone} className="nav-img" />
-              <a href="">Contact me</a>
+              <a
+                onClick={(e) => handleNavigate(e)}
+                className="link"
+                href="/Contact"
+              >
+                {""}
+                <img src={phone} className="nav-img" />
+                Contact me
+              </a>
             </li>
             {/* Need a LinkedIn image here */}
             <li>

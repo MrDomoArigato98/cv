@@ -10,7 +10,7 @@ function App() {
 
   const handleNavigate = (e) => {
     e.preventDefault();
-    console.log(currentPage);
+    console.log(e.target.text);
     setCurrentPage(e.target.text);
   };
 
