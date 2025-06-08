@@ -42,7 +42,7 @@ export default function Navbar({ handleNavigate }) {
           </div>
 
           <div className="hire-me nav-links">
-            <h2>Hire me</h2>
+            <h2>Work</h2>
             <li>
               <a
                 onClick={(e) => handleNavigate(e)}
@@ -66,7 +66,6 @@ export default function Navbar({ handleNavigate }) {
                 Contact me
               </a>
             </li>
-            {/* Need a LinkedIn image here */}
             <li>
               {" "}
               <img src={linkedin} className="nav-img" />
