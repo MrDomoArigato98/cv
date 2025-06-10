@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "../reset.css";
-import "../App.css";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import AboutMe from "./AboutMe";
+import "typeface-roboto";
+
 function App() {
   const [currentPage, setCurrentPage] = useState("Home");
 

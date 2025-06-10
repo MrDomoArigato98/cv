@@ -1,16 +1,19 @@
 body {
-  font-family: "Courier New", Courier, monospace;
-  
+    
 }
 nav {
   display: flex;
   flex-direction: column;
+  background-color: rgb(228, 228, 228);
+  box-shadow: rgba(50, 50, 93, 0.15) 4px 0px 6px -2px,
+    rgba(0, 0, 0, 0.2) 2px 0px 4px -2px;
+  max-width: 300px;
 }
 .my-name {
   text-align: center;
 }
 .nav-links > li {
-  padding: 1rem;
+  padding: 1em;
   text-align: left;
   list-style: none;
   display: flex;
@@ -23,7 +26,7 @@ nav {
   display: flex;
 }
 .nav-img {
-  width: 24px;
-  height: 24px;
+  width: 1.5em;
+  height: 1.5em;
   margin-right: 12px;
 }
