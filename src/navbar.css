@@ -11,6 +11,7 @@ nav {
 }
 .my-name {
   text-align: center;
+  color: #02AD28;
 }
 .nav-links > li {
   padding: 1em;
@@ -21,6 +22,7 @@ nav {
 }
 .hire-me > h2 {
   text-align: center;
+  color: #02AD28;
 }
 .link {
   display: flex;
