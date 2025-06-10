@@ -15,6 +15,7 @@ export default function Navbar({ handleNavigate }) {
         <ul>
           <div className="nav-links">
             <h1 className="my-name">Dominik Dobrowolski</h1>
+
             <li>
               <a
                 onClick={(e) => handleNavigate(e)}
@@ -75,6 +76,14 @@ export default function Navbar({ handleNavigate }) {
                 LinkedIn
               </a>
             </li>
+            
+            {/* <a
+              href="https://www.linkedin.com/in/dominik-dobrowolski/"
+              className="test"
+            >
+              <img src={linkedin} className="nav-img" />
+              <li>LinkedIn</li>
+            </a> */}
           </div>
         </ul>
       </nav>

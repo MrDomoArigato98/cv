@@ -1,5 +1,4 @@
 body {
-    
 }
 nav {
   display: flex;
@@ -11,18 +10,30 @@ nav {
 }
 .my-name {
   text-align: center;
-  color: #02AD28;
+  color: #02ad28;
 }
 .nav-links > li {
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
   text-align: left;
   list-style: none;
   display: flex;
   align-items: center;
+  transition: all 0.5s ease;
 }
+
+.nav-links > li:hover {
+  background-color: rgb(213, 211, 211);
+  border-radius: 5px;
+  transform: scale(1.05); /* Slight increase */
+}
+
 .hire-me > h2 {
   text-align: center;
-  color: #02AD28;
+  color: #02ad28;
 }
 .link {
   display: flex;
@@ -31,4 +42,11 @@ nav {
   width: 1.5em;
   height: 1.5em;
   margin-right: 12px;
+}
+
+a{
+    display: flex;
+}
+.test{
+    list-style: none;
 }
