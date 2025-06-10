@@ -1,10 +1,9 @@
 import { useState } from "react";
-import "./reset.css";
-import "./App.css";
-import Navbar from "./components/Navbar";
-import Maincontent from "./components/Maincontent";
-import Home from "./components/Home";
-import AboutMe from "./components/AboutMe";
+import "../reset.css";
+import "../App.css";
+import Navbar from "./Navbar";
+import Home from "./Home";
+import AboutMe from "./AboutMe";
 function App() {
   const [currentPage, setCurrentPage] = useState("Home");
 
@@ -17,7 +16,6 @@ function App() {
   const pageToRender = () => {
     switch (currentPage) {
       case "Home":
-        console.log(currentPage);
         return <Home />;
       case "About me":
         return <AboutMe />;

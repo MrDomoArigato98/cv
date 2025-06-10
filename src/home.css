@@ -1,0 +1,32 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.card{
+    display: flex;
+    width: 60%;
+    max-width: 800px;
+    background-color: rgb(206, 233, 243);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 2rem;
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    margin: 2rem;
+}
+.image-container > img{
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: auto;
+}
+.italic{
+    font-style: italic;
+}
