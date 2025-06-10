@@ -10,7 +10,7 @@ export default function Home() {
             <img src={me} alt="Picture of Dominik" />
             <p style={{ paddingTop: "1em" }} className="italic">
               {" "}
-              (Kawah Ijen, Indonesia)
+              (Ijen Volcano, Indonesia)
             </p>
           </div>
           <div className="flex">

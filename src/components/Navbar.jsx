@@ -13,77 +13,55 @@ export default function Navbar({ handleNavigate }) {
     <>
       <nav>
         <ul>
-          <div className="nav-links">
+          <div className="nav-section">
             <h1 className="my-name">Dominik Dobrowolski</h1>
 
-            <li>
-              <a
-                onClick={(e) => handleNavigate(e)}
-                className="link"
-                href="/Home"
-              >
-                {""}
-                <img src={home} className="nav-img" />
-                Home
-              </a>
-            </li>
+            <a onClick={(e) => handleNavigate(e)} className="nav-link" href="/Home">
+              {""}
+              <img src={home} className="nav-icon" />
+              <p>Home</p>
+            </a>
 
-            <li>
-              <a
-                onClick={(e) => handleNavigate(e)}
-                className="link"
-                href="/About"
-              >
-                {""}
-                <img src={person} className="nav-img" />
-                About me
-              </a>
-            </li>
+            <a
+              onClick={(e) => handleNavigate(e)}
+              className="nav-link"
+              href="/About"
+            >
+              {""}
+              <img src={person} className="nav-icon" />
+              <p>About me</p>
+            </a>
           </div>
 
           <div className="hire-me nav-links">
             <h2>Hire me</h2>
-            <li>
-              <a
-                onClick={(e) => handleNavigate(e)}
-                className="link"
-                href="/Resume"
-              >
-                {""}
-                <img src={page} className="nav-img" />
-                Resume
-              </a>
-            </li>
-
-            <li>
-              <a
-                onClick={(e) => handleNavigate(e)}
-                className="link"
-                href="/Contact"
-              >
-                {""}
-                <img src={phone} className="nav-img" />
-                Contact me
-              </a>
-            </li>
-            <li>
-              {" "}
-              <a
-                href="https://www.linkedin.com/in/dominik-dobrowolski/"
-                className="link"
-              >
-                <img src={linkedin} className="nav-img" />
-                LinkedIn
-              </a>
-            </li>
-            
-            {/* <a
-              href="https://www.linkedin.com/in/dominik-dobrowolski/"
-              className="test"
+            <a
+              onClick={(e) => handleNavigate(e)}
+              className="nav-link"
+              href="/Resume"
             >
-              <img src={linkedin} className="nav-img" />
-              <li>LinkedIn</li>
-            </a> */}
+              {""}
+              <img src={page} className="nav-icon" />
+              <p>Resume</p>
+            </a>
+
+            <a
+              onClick={(e) => handleNavigate(e)}
+              className="nav-link"
+              href="/Contact"
+            >
+              {""}
+              <img src={phone} className="nav-icon" />
+              <p>Contact me</p>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/dominik-dobrowolski/"
+              className="nav-link"
+            >
+              <img src={linkedin} className="nav-icon" />
+              <p>LinkedIn</p>
+            </a>
           </div>
         </ul>
       </nav>

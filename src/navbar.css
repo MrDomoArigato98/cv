@@ -12,7 +12,24 @@ nav {
   text-align: center;
   color: #02ad28;
 }
-.nav-links > li {
+
+.hire-me > h2 {
+  margin-top: 1em;
+  text-align: center;
+  color: #02ad28;
+}
+.link {
+  display: flex;
+}
+.nav-icon {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 12px;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
   padding-top: 1em;
   padding-bottom: 1em;
   padding-left: 0.5em;
@@ -24,29 +41,8 @@ nav {
   align-items: center;
   transition: all 0.5s ease;
 }
-
-.nav-links > li:hover {
+.nav-link:hover {
   background-color: rgb(213, 211, 211);
   border-radius: 5px;
   transform: scale(1.05); /* Slight increase */
-}
-
-.hire-me > h2 {
-  text-align: center;
-  color: #02ad28;
-}
-.link {
-  display: flex;
-}
-.nav-img {
-  width: 1.5em;
-  height: 1.5em;
-  margin-right: 12px;
-}
-
-a{
-    display: flex;
-}
-.test{
-    list-style: none;
 }

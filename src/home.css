@@ -31,4 +31,5 @@ main > h2{
 }
 .italic{
     font-style: italic;
+    font-weight: 500;
 }
