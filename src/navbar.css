@@ -30,11 +30,11 @@ nav {
 .nav-link {
   list-style: none;
   display: flex;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   padding-left: 0.5em;
-  margin-right: 0.5em;
-  margin-left: 0.5em;
+  margin: 1em;
+
   text-align: left;
   list-style: none;
   display: flex;
@@ -42,7 +42,7 @@ nav {
   transition: all 0.5s ease;
 }
 .nav-link:hover {
-  background-color: rgb(213, 211, 211);
+  background-color: rgb(240, 240, 240);
   border-radius: 5px;
   transform: scale(1.05); /* Slight increase */
 }
