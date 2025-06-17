@@ -1,0 +1,14 @@
+.skills-certifications {
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+}

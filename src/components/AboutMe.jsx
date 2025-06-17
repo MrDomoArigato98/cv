@@ -1,8 +1,13 @@
+import WorkTimeline from "./WorkTimeline";
+import "../aboutme.css"
+import SkillsAndCerts from "./SkillsAndCerts";
 export default function AboutMe() {
   return (
     <>
       <main>
-        <h2>About me</h2>
+        <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>Work & Skills</h2>
+        <WorkTimeline />
+        <SkillsAndCerts/>
       </main>
     </>
   );

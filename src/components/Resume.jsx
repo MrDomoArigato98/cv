@@ -1,9 +1,10 @@
+import WorkTimeline from "./WorkTimeline"
 export default function Resume(){
 
 
     return(
         <>
-        <p>Hi</p>
+        <p>Work history</p>
         </>
     )
 }
