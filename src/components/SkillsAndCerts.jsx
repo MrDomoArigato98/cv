@@ -15,7 +15,7 @@ export default function SkillsAndCerts() {
     { name: "Python", icon: python }, // already imported
     { name: "Node.js", icon: nodejs },
     { name: "React", icon: react },
-    { name: "HTML/CSS/JS", icon: web },
+    { name: "HTML/CSS/Javascript", icon: web },
   ];
 
 
