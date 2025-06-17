@@ -6,7 +6,7 @@ import person from "../assets/person.png";
 import page from "../assets/page.png";
 import phone from "../assets/phone.png";
 import linkedin from "../assets/linkedin.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -15,29 +15,50 @@ export default function Navbar() {
         <div className="nav-section">
           <h1 className="my-name">Dominik Dobrowolski</h1>
 
-          <Link to="/" className="nav-link">
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              "nav-link" + (isActive ? " active" : "")
+            }
+          >
             <img src={home} className="nav-icon" />
             <p>Home</p>
-          </Link>
+          </NavLink>
 
-          <Link to="/about" className="nav-link">
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              "nav-link" + (isActive ? " active" : "")
+            }
+          >
             <img src={person} className="nav-icon" />
             <p>About me</p>
-          </Link>
+          </NavLink>
         </div>
 
         <div className="hire-me nav-links">
           <h2>Hire me</h2>
 
-          <Link to="/resume" className="nav-link">
+          <NavLink
+            to="/resume"
+            className={({ isActive }) =>
+              "nav-link" + (isActive ? " active" : "")
+            }
+          >
             <img src={page} className="nav-icon" />
             <p>Resume</p>
-          </Link>
+          </NavLink>
 
-          <Link to="/contact" className="nav-link">
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              "nav-link" + (isActive ? " active" : "")
+            }
+          >
             <img src={phone} className="nav-icon" />
             <p>Contact me</p>
-          </Link>
+          </NavLink>
 
           <a
             href="https://www.linkedin.com/in/dominik-dobrowolski/"

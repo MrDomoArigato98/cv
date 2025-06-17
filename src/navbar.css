@@ -49,3 +49,9 @@ nav {
   border-radius: 5px;
   transform: scale(1.05); /* Slight increase */
 }
+
+.nav-link.active {
+  background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+  transform: scale(1.05); /* Slight increase */
+}
