@@ -1,4 +1,4 @@
-import "../index.css";
+import "../styles/index.css";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -16,7 +16,7 @@ const workHistory = [
     title: "Cloud Support Engineer II – AWS",
     date: "June 2023 – November 2024",
     description:
-      "Specialized in Lambda, API Gateway, and Step Functions. Promoted after becoming SME in Serverless.",
+      "Specialized in Lambda, API Gateway, and Step Functions. Promoted after becoming SME in AWS Lambda .",
     icon: <FaAws />,
   },
   {
@@ -68,7 +68,7 @@ export default function WorkTimeline() {
           contentStyle={{ background: "#f8f9fa", color: "#000" }}
         >
           <h3 className="vertical-timeline-element-title">{job.title}</h3>
-          <p>{job.description}</p>
+        {job.description}
         </VerticalTimelineElement>
       ))}
     </VerticalTimeline>

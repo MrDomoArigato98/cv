@@ -1,5 +1,5 @@
 import me from "../assets/me.jpg";
-import "../home.css";
+import "../styles/home.css";
 export default function Home() {
   return (
     <>

@@ -1,6 +1,6 @@
 // src/components/Navbar.jsx
-import "../reset.css";
-import "../navbar.css";
+import "../styles/reset.css";
+import "../styles/navbar.css";
 import home from "../assets/home.png";
 import person from "../assets/person.png";
 import page from "../assets/page.png";

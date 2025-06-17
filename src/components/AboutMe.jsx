@@ -1,5 +1,5 @@
 import WorkTimeline from "./WorkTimeline";
-import "../aboutme.css"
+import "../styles/aboutme.css"
 import SkillsAndCerts from "./SkillsAndCerts";
 export default function AboutMe() {
   return (
