@@ -3,9 +3,8 @@ import "../reset.css";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import AboutMe from "./AboutMe";
-import "typeface-roboto";
 import AppRoutes from "../routes"
-
+import "typeface-roboto";
 function App() {
   return (
     <>
