@@ -27,7 +27,7 @@ export default function Navbar() {
           </NavLink>
 
           <NavLink
-            to="/about"
+            to="/about-me"
             className={({ isActive }) =>
               "nav-link" + (isActive ? " active" : "")
             }

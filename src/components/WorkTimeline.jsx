@@ -1,4 +1,5 @@
-import "../styles/index.css";
+import "../styles/reset.css";
+import "../styles/worktimeline.css";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -11,12 +12,21 @@ import {
   FaGraduationCap,
 } from "react-icons/fa"; // or your icons
 
+import SkillsAndCerts from "./SkillsAndCerts";
+
 const workHistory = [
+  {
+    title: "Software Development",
+    date: "Now",
+    description:
+      "Transitioning to full time Software Development. I'm passionate about learning and solving complex technical issues. Contact me!",
+    icon: <FaUserTie />,
+  },
   {
     title: "Cloud Support Engineer II – AWS",
     date: "June 2023 – November 2024",
     description:
-      "Specialized in Lambda, API Gateway, and Step Functions. Promoted after becoming SME in AWS Lambda .",
+      "Specialized in Lambda, API Gateway, and Step Functions. Promoted after becoming SME in AWS Lambda.",
     icon: <FaAws />,
   },
   {
@@ -39,17 +49,9 @@ const workHistory = [
     date: "September 2016 – May 2020",
     description: (
       <>
-        <p>
-          Graduated with a second-class honour, first division (GPA 3.6).
-          Focused on Unix/Linux systems, Cloud Computing, System Infrastructure,
-          and development in Python, C, C#, Java, and Web (JS, HTML, CSS). CCNA
-          1–4.
-        </p>
-        <p style={{ marginTop: "1rem" }}>
-          <strong>Hanyang University, South Korea (Feb – Jun 2018):</strong>{" "}
-          Studied Computer Networking, Linear Algebra, and C#. Gained
-          beginner-level Korean proficiency.
-        </p>
+        Graduated with a second-class honour, first division (GPA 3.6).
+        Additionally studied in Hanyang University, South Korea (Feb 2018 – Jun
+        2018).
       </>
     ),
     icon: <FaGraduationCap />,
@@ -68,7 +70,7 @@ export default function WorkTimeline() {
           contentStyle={{ background: "#f8f9fa", color: "#000" }}
         >
           <h3 className="vertical-timeline-element-title">{job.title}</h3>
-        {job.description}
+          <p>{job.description}</p>
         </VerticalTimelineElement>
       ))}
     </VerticalTimeline>

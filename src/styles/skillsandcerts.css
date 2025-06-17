@@ -1,0 +1,54 @@
+.skills-certs {
+  width: 100%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-icon {
+  width: 20px;
+  height: 20px;
+}
+.grid-item {
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+.grid-item > ul {
+  list-style: none;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+  justify-items: center;
+  text-align: center;
+}
+
+.cert-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.cert-badge img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease;
+}
