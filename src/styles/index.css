@@ -19,12 +19,8 @@
 }
 
 a {
-  font-weight: bold;
-  text-decoration: none;
   color: black;
-}
-a:hover {
-  color: rgb(8, 110, 17);
+  text-decoration: none;
 }
 
 

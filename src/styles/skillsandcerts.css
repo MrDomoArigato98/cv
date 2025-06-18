@@ -59,5 +59,7 @@
 @media (max-width: 1100px) {
   .grid-container {
     grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
   }
 }
