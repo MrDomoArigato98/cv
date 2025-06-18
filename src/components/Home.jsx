@@ -1,5 +1,7 @@
 import me from "../assets/me.jpg";
 import "../styles/home.css";
+
+import todo from "../assets/todo.png";
 export default function Home() {
   return (
     <>
@@ -16,12 +18,22 @@ export default function Home() {
           <div className="flex">
             <div>
               <p>
-                I'm based in Ireland, Dublin (open to relocation). Transitioning fully into Software Development.
+                I'm based in Ireland, Dublin (open to relocation). Transitioning
+                fully into Software Development.
               </p>
               <p style={{ paddingTop: "1em" }}>Welcome to my website 💻</p>
             </div>
           </div>
         </section>
+
+        <div className="projects">
+          <div className="projects-row">
+            <p>Hey</p>
+            <img className="project-img" src={todo}></img>
+          </div>
+          <div className="projects-row">Todo </div>
+          <div className="projects-row">Todo </div>
+        </div>
       </main>
     </>
   );
