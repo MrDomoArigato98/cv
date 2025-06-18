@@ -2,6 +2,9 @@
   text-align: left;
 }
 
+.vertical-timeline-element-date{
+    font-style: italic;
+}
 @media (max-width: 768px) {
   .vertical-timeline-element-content {
     text-align: center;

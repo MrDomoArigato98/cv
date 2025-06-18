@@ -3,7 +3,7 @@ import "../styles/home.css";
 export default function Home() {
   return (
     <>
-      <main>
+      <main className="bounce-in">
         <h2>Hi, I'm Dominik 👋</h2>
         <section className="card">
           <div className="image-container">

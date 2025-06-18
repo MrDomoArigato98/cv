@@ -1,14 +1,13 @@
 // src/components/Navbar.jsx
 import "../styles/reset.css";
 import "../styles/navbar.css";
-import {useState} from 'react'
 import home from "../assets/home.png";
 import person from "../assets/person.png";
 import page from "../assets/page.png";
 import phone from "../assets/phone.png";
 import linkedin from "../assets/linkedin.png";
 import { NavLink } from "react-router-dom";
-import Hamburger from 'hamburger-react'
+
 
 export default function Navbar() {
   
