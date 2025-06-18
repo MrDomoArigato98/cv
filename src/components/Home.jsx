@@ -20,9 +20,9 @@ export default function Home() {
 
   return (
     <>
-      <main className="bounce-in">
+      <main className="">
         <h2>Hi, I'm Dominik 👋</h2>
-        <section className="card">
+        <section className="bounce-in card">
           <div className="image-container">
             <img src={me} alt="Picture of Dominik" />
             <p style={{ paddingTop: "1em" }} className="italic">
