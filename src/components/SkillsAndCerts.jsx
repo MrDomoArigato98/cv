@@ -42,8 +42,8 @@ export default function SkillsAndCerts() {
 
 
   const cloud = [
-    { name: "AWS (Lambda, API Gateway, Step Functions, SQS, Kinesis, VPC & Networking, CloudWatch, IAM and more!)", icon: aws }, // already imported
-    { name: "IaC - AWS CDK, CloudFormation, Serverless Application Model (SAM), Terraform", icon: cloud_ },
+    { name: "AWS Cloud", icon: aws }, // already imported
+    { name: "IaC - AWS CDK, CFN, SAM, Terraform", icon: cloud_ },
     { name: "Docker", icon: docker },
     { name: "REST API", icon: rest },
     { name: "Relational Databases (AWS RDS) & SQL ", icon: database },
@@ -55,7 +55,7 @@ export default function SkillsAndCerts() {
         <h3> Skills and certification</h3>
         <div className="grid-container">
           <div className="grid-item">
-            <h3>Programming & Scripting</h3>
+            <h4>Programming & Scripting</h4>
             <ul>
               {programmingSkills.map((skill, idx) => (
                 <li key={idx} className="skill-item">
@@ -85,7 +85,7 @@ export default function SkillsAndCerts() {
           </div>
 
           <div className="grid-item">
-            <h3>Cloud & Infrastructure </h3>
+            <h4>Cloud & Infrastructure </h4>
             <ul>
                 {cloud.map((skill, idx) => (
                 <li key={idx} className="skill-item">

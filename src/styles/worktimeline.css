@@ -1,3 +1,9 @@
-.grid-container{
-    display: grid;
+.vertical-timeline-element-content {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .vertical-timeline-element-content {
+    text-align: center;
+  }
 }
