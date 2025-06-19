@@ -1,0 +1,25 @@
+.in-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em 0;
+}
+
+.cog-spin {
+  animation: spin 4s linear infinite;
+  color: #2d7f45; /* AWS-like green, adjust as you want */
+}
+
+.progress-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.03em;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

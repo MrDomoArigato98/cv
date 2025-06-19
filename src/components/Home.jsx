@@ -1,7 +1,9 @@
 import me from "../assets/me.jpg";
+import building from "../assets/building.jpg";
 import "../styles/home.css";
-
+import InProgress from "./InProgress";
 import todo from "../assets/todo.png";
+import { FaLaptopCode } from "react-icons/fa";
 export default function Home() {
   const projects = [
     {
@@ -11,9 +13,9 @@ export default function Home() {
       link: "https://mrdomoarigato98.github.io/The-Odin-Project/To-do%20App/dist/index.html",
     },
     {
-      title: "Dummy item",
-      description: "Another dummy item",
-      image: todo,
+      title: "Shopping Cart",
+      description: <InProgress text="Building..." />,
+      image: building,
       link: "",
     },
   ];
@@ -27,7 +29,7 @@ export default function Home() {
             <img src={me} alt="Picture of Dominik" />
             <p style={{ paddingTop: "1em" }} className="italic">
               {" "}
-              (Ijen Volcano, Indonesia)
+              Ijen Volcano, Indonesia
             </p>
           </div>
           <div className="flex">
@@ -43,21 +45,29 @@ export default function Home() {
 
         <div className="projects">
           <h3>Projects </h3>
-
           {projects.map((item, idx) => {
             return (
-              <div id={idx}>
-                <a className="projects-row" href={item.link}>
-                  <div className="projects-text">
-                    <h4>{item.title}</h4>
-                    <p className="project-description">{item.description}</p>
-                  </div>
-                  <img className="project-img" src={item.image}></img>
-                </a>
-              </div>
+              <a
+                className="projects-row"
+                href={item.link}
+                key={idx}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="projects-text">
+                  <h4>{item.title}</h4>
+                  <p className="project-description">{item.description}</p>
+                </div>
+                {item.image && (
+                  <img
+                    className="project-img"
+                    alt={item.title}
+                    src={item.image}
+                  ></img>
+                )}
+              </a>
             );
           })}
-          <div className="projects-row">Todo </div>
         </div>
       </main>
     </>

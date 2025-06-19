@@ -126,4 +126,7 @@ nav {
   }
 @media (max-width: 768px) {
   
+  .my-name {
+    font-size: 1.4rem;
+}
 }

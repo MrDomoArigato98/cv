@@ -1,10 +1,11 @@
-import WorkTimeline from "./WorkTimeline"
-export default function Resume(){
-
-
-    return(
-        <>
-        <p>Work history</p>
-        </>
-    )
+import WorkTimeline from "./WorkTimeline";
+import InProgress from "./InProgress";
+export default function Resume() {
+  return (
+    <>
+      <main>
+        <InProgress text="Building..." />
+      </main>
+    </>
+  );
 }
