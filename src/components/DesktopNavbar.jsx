@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className="hire-me nav-links">
           <h2>Hire me</h2>
 
-          <NavLink
+          {/* <NavLink
             to="/resume"
             className={({ isActive }) =>
               "nav-link" + (isActive ? " active" : "")
@@ -48,7 +48,7 @@ export default function Navbar() {
           >
             <img src={page} className="nav-icon" />
             <p>Resume</p>
-          </NavLink>
+          </NavLink> */}
 
           <NavLink
             to="/contact"

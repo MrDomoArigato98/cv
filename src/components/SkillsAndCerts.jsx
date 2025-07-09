@@ -16,6 +16,7 @@ export default function SkillsAndCerts() {
     { name: "Node.js", icon: nodejs },
     { name: "React", icon: react },
     { name: "HTML/CSS/Javascript", icon: web },
+    { name: "Express", icon: nodejs },
   ];
 
 
