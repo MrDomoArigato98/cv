@@ -8,17 +8,17 @@ import { FaLaptopCode } from "react-icons/fa";
 export default function Home() {
   const projects = [
     {
+      title: "Shopping Cart",
+      description: "Simple shopping site with React. Practice of state management with context provider, using a React Router, and an API for the items." ,
+      image: cart,
+      link: "https://cart-ruddy-chi.vercel.app/",
+    },
+    {
       title: "Todo Web app",
       description:
         "Simple todo app using Vanilla JS/HTML/CSS. I learned a lot about JS during this project, and about proper ways to manage my code.",
       image: todo,
       link: "https://mrdomoarigato98.github.io/The-Odin-Project/To-do%20App/dist/index.html",
-    },
-    {
-      title: "Shopping Cart",
-      description: <InProgress text="Building..." />,
-      image: cart,
-      link: "",
     },
   ];
 
@@ -45,7 +45,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <div className="projects">
+        <div className="projects">
           <h3>Projects </h3>
           {projects.map((item, idx) => {
             return (
@@ -70,7 +70,7 @@ export default function Home() {
               </a>
             );
           })}
-        </div> */}
+        </div>
       </main>
     </>
   );

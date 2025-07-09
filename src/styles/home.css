@@ -62,12 +62,10 @@ main > h2 {
   padding: 1em;
   width: 100%;
   max-width: 1000px;
-
   min-height: 240px;
   padding: 2em 2.5em;
   background: #fff;
   border-radius: 1.5em;
-
   gap: 3em;
   border: 1.5px solid #e8e8e8;
 }
@@ -80,6 +78,7 @@ main > h2 {
 }
 .project-img {
   aspect-ratio: 3 / 2;
+   flex-shrink: 0;
   width: 100%;
   max-width: 300px;
   object-fit: cover;
