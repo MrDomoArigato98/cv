@@ -1,5 +1,6 @@
 import me from "../assets/me.jpg";
 import building from "../assets/building.jpg";
+import cart from "../assets/cart.png";
 import "../styles/home.css";
 import InProgress from "./InProgress";
 import todo from "../assets/todo.png";
@@ -8,14 +9,15 @@ export default function Home() {
   const projects = [
     {
       title: "Todo Web app",
-      description: "abcd",
+      description:
+        "Simple todo app using Vanilla JS/HTML/CSS. I learned a lot about JS during this project, and about proper ways to manage my code.",
       image: todo,
       link: "https://mrdomoarigato98.github.io/The-Odin-Project/To-do%20App/dist/index.html",
     },
     {
       title: "Shopping Cart",
       description: <InProgress text="Building..." />,
-      image: building,
+      image: cart,
       link: "",
     },
   ];

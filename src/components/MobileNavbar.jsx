@@ -45,14 +45,14 @@ export default function MobileNavbar() {
             <img src={person} className="nav-icon" />
             About me
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/resume"
             className="nav-link"
             onClick={() => setOpen(false)}
           >
             <img src={page} className="nav-icon" />
             Resume
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="/contact"
             className="nav-link"
