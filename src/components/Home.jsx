@@ -45,7 +45,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="projects">
+        {/* <div className="projects">
           <h3>Projects </h3>
           {projects.map((item, idx) => {
             return (
@@ -70,7 +70,7 @@ export default function Home() {
               </a>
             );
           })}
-        </div>
+        </div> */}
       </main>
     </>
   );
