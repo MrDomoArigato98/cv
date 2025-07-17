@@ -10,6 +10,7 @@ import {
   FaUserTie,
   FaLaptopCode,
   FaGraduationCap,
+  FaBookReader
 } from "react-icons/fa"; // or your icons
 
 import SkillsAndCerts from "./SkillsAndCerts";
@@ -20,7 +21,7 @@ const workHistory = [
     date: "November 2024 - Present",
     description:
       "Transitioning to full time Software Development through guided study. I'm passionate about learning, programming and solving complex technical issues. Contact me!",
-    icon: <FaUserTie />,
+    icon: <FaBookReader />,
   },
   {
     title: "Cloud Support Engineer II – AWS",
