@@ -16,10 +16,10 @@ import SkillsAndCerts from "./SkillsAndCerts";
 
 const workHistory = [
   {
-    title: "Software Development",
-    date: "Now",
+    title: "Independent Development & Travel",
+    date: "November 2024 - Present",
     description:
-      "Transitioning to full time Software Development. I'm passionate about learning and solving complex technical issues. Contact me!",
+      "Transitioning to full time Software Development through guided study. I'm passionate about learning, programming and solving complex technical issues. Contact me!",
     icon: <FaUserTie />,
   },
   {
