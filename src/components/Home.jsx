@@ -5,20 +5,18 @@ import "../styles/home.css";
 import InProgress from "./InProgress";
 import todo from "../assets/todo.png";
 import { FaLaptopCode } from "react-icons/fa";
+import messageBoard from "../assets/message-board.png";
+import { FaGithub } from "react-icons/fa6";
 export default function Home() {
   const projects = [
     {
-      title: "Shopping Cart",
-      description: "Simple shopping site with React. Practice of state management with context provider, using a React Router, and an API for the items." ,
-      image: cart,
-      link: "https://cart-ruddy-chi.vercel.app/",
-    },
-    {
-      title: "Todo Web app",
+      title: "Public Message Board",
       description:
-        "Simple todo app using Vanilla JS/HTML/CSS. I learned a lot about JS during this project, and about proper ways to manage my code.",
-      image: todo,
-      link: "https://mrdomoarigato98.github.io/The-Odin-Project/To-do%20App/dist/index.html",
+        "Public message board app with authentication, password hashing, sanitization & validation and a database with tables to store users and messages.",
+      git: "https://github.com/MrDomoArigato98/TOP-members-only",
+      icon: <FaGithub />,
+      image: messageBoard,
+      link: "https://top-members-only-production-d4f9.up.railway.app/",
     },
   ];
 
@@ -45,13 +43,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <div className="projects">
+        <div className="projects">
           <h3>Projects </h3>
           {projects.map((item, idx) => {
             return (
-              <a
+              <div
                 className="projects-row"
-                href={item.link}
                 key={idx}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -59,6 +56,21 @@ export default function Home() {
                 <div className="projects-text">
                   <h4>{item.title}</h4>
                   <p className="project-description">{item.description}</p>
+
+                  <div className="projects-links">
+                    <a
+                      className="git-icon"
+                      href={item.git}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaGithub size={40} />
+                      <span className="git-label highlight">Git</span>
+                    </a>
+
+                    <a className="highlight link-to-site" href={item.link}>Link to site</a>
+                  </div>
+                  
                 </div>
                 {item.image && (
                   <img
@@ -67,10 +79,10 @@ export default function Home() {
                     src={item.image}
                   ></img>
                 )}
-              </a>
+              </div>
             );
           })}
-        </div> */}
+        </div>
       </main>
     </>
   );
