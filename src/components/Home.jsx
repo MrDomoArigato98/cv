@@ -12,7 +12,7 @@ export default function Home() {
     {
       title: "Public Message Board",
       description:
-        "Public message board app with authentication, password hashing, sanitization & validation and a database with tables to store users and messages.",
+        "App with authentication, password hashing, sanitization & validation and a database with tables to store users and messages.",
       git: "https://github.com/MrDomoArigato98/TOP-members-only",
       icon: <FaGithub />,
       image: messageBoard,
