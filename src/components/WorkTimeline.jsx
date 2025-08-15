@@ -27,7 +27,7 @@ const workHistory = [
     title: "Cloud Support Engineer II – AWS",
     date: "June 2023 – November 2024",
     description:
-      "Specialized in Lambda, API Gateway, and Step Functions. Promoted after becoming SME in AWS Lambda.",
+      "Specialized in Lambda, API Gateway, and Step Functions. Promoted after becoming SME in AWS Lambda. Gained more experience with development and AWS CI/CD.",
     icon: <FaAws />,
   },
   {

@@ -9,11 +9,13 @@ import cloud_ from "../assets/cloud.svg"
 import rest from "../assets/rest.svg"
 import database from "../assets/database.svg"
 import nonrds from "../assets/nonrds.svg"
+import typescript from "../assets/typescript.svg"
 
 export default function SkillsAndCerts() {
   const programmingSkills = [
     { name: "Python", icon: python }, // already imported
     { name: "Node.js", icon: nodejs },
+    { name: "TypeScript", icon: typescript },
     { name: "React", icon: react },
     { name: "HTML/CSS/Javascript", icon: web },
     { name: "Express", icon: nodejs },
