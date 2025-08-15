@@ -15,7 +15,7 @@ export default function Contact() {
           <a
             href="/Dominik_Dobrowolski_CV - SWE.pdf"
             download
-            className="cv-download-link"
+            className="cv-download-link item-hover"
             style={{
               marginTop: "2rem",
               display: "inline-block",
@@ -27,24 +27,7 @@ export default function Contact() {
               textDecoration: "none",
             }}
           >
-            📄 Download My CV - Software Engineer Roles
-          </a>
-          <a
-            href="/Dominik_Dobrowolski_CV - Cloud.pdf"
-            download
-            className="cv-download-link"
-            style={{
-              marginTop: "2rem",
-              display: "inline-block",
-              padding: "0.75rem 1.5rem",
-              backgroundColor: "#02ad28",
-              color: "white",
-              borderRadius: "6px",
-              fontWeight: "bold",
-              textDecoration: "none",
-            }}
-          >
-            📄 Download My CV - Cloud / DevOps Roles
+            📄 Download My CV
           </a>
         </div>
       </div>
