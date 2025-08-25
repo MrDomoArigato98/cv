@@ -35,8 +35,8 @@ export default function Home() {
           <div className="flex">
             <div>
               <p>
-                I'm based in Ireland, Dublin. Transitioning fully into Software Development.
               </p>
+                I'm based in Ireland, Dublin. Transitioning fully into Software Development and Infrastructure Engineering.
               <p style={{ paddingTop: "1em" }}>Welcome to my website 💻</p>
             </div>
           </div>
