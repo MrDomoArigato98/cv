@@ -6,6 +6,7 @@ import person from "../assets/person.png";
 import page from "../assets/page.png";
 import phone from "../assets/phone.png";
 import linkedin from "../assets/linkedin.png";
+import { FaGithub } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 
@@ -68,6 +69,15 @@ export default function Navbar() {
           >
             <img src={linkedin} className="nav-icon" />
             <p>LinkedIn</p>
+          </a>
+          <a
+            href="https://github.com/MrDomoArigato98"
+            className="nav-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="nav-icon"/>
+            <p>My GitHub</p>
           </a>
         </div>
     </nav>

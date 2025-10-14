@@ -8,12 +8,12 @@ export default function Contact() {
         style={{ padding: "2rem", textAlign: "center" }}
       >
         <h2>Contact Me</h2>
-        <p>Have any openings for Software roles?</p>
+        <p>Have any openings for engineering roles?</p>
         <p>Email: domdob98@gmail.com</p>
         <p>Location: Ireland, EU, or Remote!</p>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <a
-            href="/Dominik_Dobrowolski_CV - SWE.pdf"
+            href="/Dominik_Dobrowolski_CV.pdf"
             download
             className="cv-download-link item-hover"
             style={{

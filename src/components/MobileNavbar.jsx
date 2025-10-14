@@ -7,7 +7,7 @@ import person from "../assets/person.png";
 import page from "../assets/page.png";
 import phone from "../assets/phone.png";
 import linkedin from "../assets/linkedin.png";
-
+import { FaGithub } from "react-icons/fa";
 export default function MobileNavbar() {
   const [isOpen, setOpen] = useState(false);
 
@@ -70,6 +70,15 @@ export default function MobileNavbar() {
           >
             <img src={linkedin} className="nav-icon" />
             LinkedIn
+          </a>
+          <a
+            href="https://github.com/MrDomoArigato98"
+            className="nav-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="nav-icon"/>
+            <p>My GitHub</p>
           </a>
         </div>
       )}
